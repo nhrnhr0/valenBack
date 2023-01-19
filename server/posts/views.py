@@ -5,7 +5,7 @@ from django.conf import settings
 
 from server.settings import MEDIA_URL
 import os
-from ..core.decorators import user_is_superuser
+# from server.core.decorators import user_is_superuser
 
 from .serializers import PostSerializer
 from .models import Post

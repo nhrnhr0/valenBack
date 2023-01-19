@@ -10,6 +10,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
+    header_image = models.ImageField(upload_to='images/', blank=True)
     
     
     def save(self, *args, **kwargs):  # new
